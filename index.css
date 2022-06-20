@@ -1,5 +1,6 @@
 *{
-    background-color: green;
+    background-color: #e3e0cf;
+    color: black;
 }
 .navbar {
     width: 100%;
@@ -9,7 +10,6 @@
   .navbar a {
     float: left;
     padding: 12px;
-    color: black;
     text-decoration: none;
     font-size: 17px;
     width: 25%;
