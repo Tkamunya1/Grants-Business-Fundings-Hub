@@ -1,4 +1,5 @@
 *{
+    background-color: green;
 }
 .navbar {
     width: 100%;
@@ -8,7 +9,7 @@
   .navbar a {
     float: left;
     padding: 12px;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 17px;
     width: 25%;
@@ -16,7 +17,7 @@
   }
   
   .navbar a:hover {
-    background-color: #000;
+    background-color: rebeccapurple;
   }
   
   .navbar a.active {
