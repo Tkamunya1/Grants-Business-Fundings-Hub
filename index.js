@@ -43,3 +43,15 @@ const f = document.getElementById('form');
       }
 
       f.addEventListener('submit', submitted);
+
+      //comment box 
+      const post= document.getElementById("post");
+      post.addEventListener("click", function(){
+          let commentBoxValue= document.getElementById("comment-box").value;
+       
+          let li = document.createElement("li");
+          let text = document.createTextNode(commentBoxValue);
+          li.appendChild(text);
+          document.getElementById("unordered").appendChild(li);
+       
+      });
