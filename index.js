@@ -44,3 +44,27 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+const BASE_url="https://www.omdbapi.com/"
+function displayMovie(movieObj){
+    const description=document.querySelector(".description");
+    filmInfo.innerText=movieObj.description
+  
+}
+
+// fetch(BASE_url)
+// .then( response=>response.json())
+// .then(jsonData=>{
+//     //console.log(jsonData)
+//     displayMovie(jsonData[0])
+//     const movieList=document.getElementById("films")
+//     jsonData.forEach(movieObj=>{
+//     const li=document.createElement("li")
+//     li.className="film item"
+//     li.innerText=movieObj.title
+//     movieList.append(li)
+//     li.addEventListener("click",()=>{
+//         displayMovie(movieObj)
+//     })
+//     })
+// })

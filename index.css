@@ -5,6 +5,7 @@ body{
 /*background-image: url("./Assets/Images/paul-green-4BmPrbvvj74-unsplash.jpg"); */
 padding-left: 50px;
 background-color: #F4F0E8;
+
 } 
 nav{
   padding-top: 50px;
@@ -53,35 +54,7 @@ nav{
     align-items:center;
   }
   
-  input {
-    all: unset;
-    font: 16px system-ui;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;
-  }
-  
-  ::placeholder {
-    color: #fff;
-    opacity: 0.7; 
-  }
-  
-  svg {
-    color: #fff;
-    fill: currentColor;
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-  }
-  
-  button {
-    all: unset;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-  
-  }
+
   
   .card {
     color: white;
@@ -131,16 +104,22 @@ ol li a{
   font-size: larger;
 }
 #comment-box{
-  background: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink) fixed;
-   width: 30%;
+   width: 50%;
+   text-align: center;
+   font-size: larger;
+   color: black;
+   background-color: none;
+   height: 5vh;
+
 }
-#comment-box, #post {
+ #post {
   border: none;
   border-radius: 5px;
-  height: 10vh;
+  height: 3vh;
+  background-color: dodgerblue;
 }
 #post:hover{
-  background-color: dodgerblue;
+  background-color: white;
 }
 
 .collapsible {
@@ -169,4 +148,40 @@ ol li a{
 }
 span{
   color: black;
+  font-size: large;
+  font-style: italic;
 }
+#unordered{
+  list-style: none;
+}
+/*  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+  
+  svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  }
+  
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  
+  }
+  */
+  
