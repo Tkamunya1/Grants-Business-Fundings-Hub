@@ -5,15 +5,18 @@ body{
 /*background-image: url("./Assets/Images/paul-green-4BmPrbvvj74-unsplash.jpg"); */
 padding-left: 50px;
 background-color: #F4F0E8;
-}  
-.navbar {
+} 
+nav{
+  padding-top: 50px;
   text-align: center;
+  font-size: xx-large;
+} 
+.navbar {
     width: 100%;
     overflow: auto;
   }
   
   .navbar a {
-    float: left;
     padding: 12px;
     text-decoration: none;
     font-size: 17px;
@@ -22,7 +25,7 @@ background-color: #F4F0E8;
   }
   
   .navbar a:hover {
-    background-color: rebeccapurple;
+    background-color: black;
   }
   
   .navbar a.active {
@@ -87,6 +90,7 @@ background-color: #F4F0E8;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
+    
 
  }
  .card p {
@@ -99,6 +103,8 @@ background-color: #F4F0E8;
    font-style: italic;
    align-items: center;
    padding-top: 20px;
+   padding-left: 80px;
+
  }
  .cardContainer:after {
     content: "";
@@ -143,9 +149,24 @@ ol li a{
   padding: 18px;
   width: 90%;
   border: none;
-  text-align: left;
   outline: none;
-  font-size: 15px;
+  font-weight: bold;
+  font-size: larger;
 }
-  
+ 
+#movers{
 
+}
+#movers ul {
+  display: flex
+}
+#movers ul li{
+  list-style: none;
+  display: inline-block;
+  padding-bottom: 50px;
+  padding-left: 80px;
+
+}
+span{
+  color: black;
+}

@@ -11,11 +11,29 @@
 
 <body>
     <!--Nav-->
+<nav>
     <div class="navbar">
         <a class="active" href="#">Grants & Business <br>Funds Directory</a>
     </div>
-
-    <div class="Search Bar">
+</nav>
+    <section id="movers">
+        <h2>Our Top Movers</h2>
+        <ul id="companies-list">
+        <li>Web 3 Foundation</li>
+        <li>Avalanche</li>
+        <li>Harmony</li>
+        <li>Solana</li>
+        <li>Polkadot</li>
+        <li>Binance</li>
+        <li>Ethereum Foundation</li>
+     </ul>
+        <div class="company-details">
+            <p>
+                <em id="company-description">Company Description Goes Here</em>
+            </p>
+    </section>
+    <!--
+        <div class="Search Bar">
         <form role="search" id="form">
             <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
             <button>
@@ -27,11 +45,12 @@
             </button>
         </form>
     </div>
+-->
     <section id="Grants">
         <h2> Grants and Investment Firms</h2>
         <div class="cardContainer">
             <div class="card">
-                <button type="button" class="collapsible">Biggest Blockchain Grants (click to reveal)</button>
+                <button type="button" class="collapsible">Biggest Blockchain Grants <span>(click to reveal/hide data)</span></button>
 
                 <ol>
                     <li>Web3 Foundation Grants:$30,000 First-timers<br> <a
@@ -54,7 +73,7 @@
 
             </div>
             <div class="card">
-                <button type="button" class="collapsible">Small Business Loans (click to reveal)</button>
+                <button type="button" class="collapsible">Small Business Loans <span>(click to reveal/hide data</span></button>
 
                 <ol>
                     <li>Lendio; 4.3/5 Overall Rating<br> <a
@@ -79,7 +98,8 @@
 
             </div>
             <div class="card">
-                <button type="button" class="collapsible">Startup Accelerators and Incubators (click to hide data)</button>
+                <button type="button" class="collapsible">Startup Accelerators & Incubators <span>(click to reveal/hide
+                    data)</span></button>
 
                 <ol>
                     <li>Web3 Foundation Grants:$30,000 First-timers<br> <a
@@ -102,7 +122,7 @@
             </div>
             <!---->
             <div class="card">
-                <button type="button" class="collapsible">Best Crowdfunding Platforms (click to hide data)</button>
+                <button type="button" class="collapsible">Best Crowdfunding Platforms <span>(click to reveal/ hide data)</span></button>
 
                 <ol>
                     <li>Web3 Foundation Grants:$30,000 First-timers<br> <a
@@ -124,7 +144,7 @@
                 </ol>
             </div>
             <div class="card">
-                <button type="button" class="collapsible">Websites to find Investors (click to hide data)</button>
+                <button type="button" class="collapsible">Websites to find Investors <span>(click to reveal/hide data)</span></button>
 
                 <ol>
                     <li>Web3 Foundation Grants:$30,000 First-timers<br> <a
@@ -147,7 +167,8 @@
 
             </div>
             <div class="card">
-                <button type="button" class="collapsible">Fastest Growing Industries in World (click to hide data)</button>
+                <button type="button" class="collapsible">Fastest Growing Industries in World <span>(click to reveal/ hide
+                    data)</span></button>
 
                 <ol>
                     <li>Web3 Foundation Grants:$30,000 First-timers<br> <a
@@ -170,25 +191,7 @@
 
             </div>
         </div>
-        <!-- contact section start 
-        <form action="/" method="post">
-            <ul>
-                <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" name="user_email" />
-                </li>
-                <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Send your message</button>
-                </li>
-            </ul> -->
+
         <section class="comments" <div>
             <h2>Love the content? What would you like us to feature? Leave a comment</h2><br>
             </div>
@@ -200,8 +203,9 @@
             </div>
         </section>
 
+        
 
-        <script src="./index.js"></script>
+   <script src="./index.js"></script>
 </body>
 
 </html>
