@@ -1,19 +1,5 @@
 
 
-// const f = document.getElementById('form');
-// const q = document.getElementById('query');
-// const google = 'https://www.google.com/search?q=site%3A+';
-// const site = 'https://www.blockchaingrants.org/';
-
-// function submitted(event) {
-//   event.preventDefault();
-//   const url = google + site + '+' + q.value;
-//   const win = window.open(url, '_blank');
-//   win.focus();
-// }
-
-// f.addEventListener('submit', submitted);
-
 //comment box 
 const post = document.getElementById("post");
 post.addEventListener("click", function () {
@@ -45,26 +31,33 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-const BASE_url="https://www.omdbapi.com/"
-function displayMovie(movieObj){
-    const description=document.querySelector(".description");
-    filmInfo.innerText=movieObj.description
-  
+
+
+const viewBook=document.getElementById('viewBook').value;
+let clickBook=()=>{
+  console.log("viewBook");
+}
+let clickBook = () =>{
+  fetch('')
 }
 
-// fetch(BASE_url)
-// .then( response=>response.json())
-// .then(jsonData=>{
-//     //console.log(jsonData)
-//     displayMovie(jsonData[0])
-//     const movieList=document.getElementById("films")
-//     jsonData.forEach(movieObj=>{
-//     const li=document.createElement("li")
-//     li.className="film item"
-//     li.innerText=movieObj.title
-//     movieList.append(li)
-//     li.addEventListener("click",()=>{
-//         displayMovie(movieObj)
-//     })
-//     })
-// })
+
+
+
+
+clickBook(); 
+
+const viewBook=document.getElementById('viewBook').value;
+console.log(viewBook)
+Viewbook.addEventListener('click', function(){
+  let bookValue=document.getElementById('viewBook').value;
+
+  let p=document.createElement('p')
+  let text = document.createTextNode(bookValue);
+  p.appendChild(text);
+  document.getElementById("bookDiv").appendChild(p);
+})
+
+
+//http://openlibrary.org/search/books.json?q=The Greatest Little Business Book
+

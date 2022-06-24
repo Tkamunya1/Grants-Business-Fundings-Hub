@@ -53,7 +53,26 @@ nav{
     flex-direction:row;
     align-items:center;
   }
+  #movers{
+    align-items: center;
+    padding-left: 80px;
+
+
+  }
   
+  #movers ul li{
+    list-style: none;
+    display: inline-block;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    font-size: larger;
+  }
+
+
+  #viewBook{
+    font-style: italic;
+    height: 5vh;
+  }
 
   
   .card {
@@ -133,19 +152,7 @@ ol li a{
   font-size: larger;
 }
  
-#movers{
 
-}
-#movers ul {
-  display: flex
-}
-#movers ul li{
-  list-style: none;
-  display: inline-block;
-  padding-bottom: 50px;
-  padding-left: 80px;
-
-}
 span{
   color: black;
   font-size: large;
