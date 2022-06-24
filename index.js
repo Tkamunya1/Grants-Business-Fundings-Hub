@@ -34,30 +34,17 @@ for (i = 0; i < coll.length; i++) {
 
 
 const viewBook=document.getElementById('viewBook').value;
-let clickBook=()=>{
-  console.log("viewBook");
+async function loadBook(searchTerm){
+  const url=`http://openlibrary.org/search.json?title=the+lord+of+the+rings`
+  fetch(url)
+  .then(res=>res.json())
+  .then(res=>console.log(res));
 }
-let clickBook = () =>{
-  fetch('')
-}
 
 
 
 
 
-clickBook(); 
+viewBook(); 
 
-const viewBook=document.getElementById('viewBook').value;
-console.log(viewBook)
-Viewbook.addEventListener('click', function(){
-  let bookValue=document.getElementById('viewBook').value;
-
-  let p=document.createElement('p')
-  let text = document.createTextNode(bookValue);
-  p.appendChild(text);
-  document.getElementById("bookDiv").appendChild(p);
-})
-
-
-//http://openlibrary.org/search/books.json?q=The Greatest Little Business Book
 
