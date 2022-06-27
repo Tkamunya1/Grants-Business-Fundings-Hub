@@ -35,39 +35,70 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-const renderOneBook = document.getElementsByClassName("card1");
+// const renderOneBook = document.getElementsByClassName("card1");
 
-//Render One book
-function renderOneBook(book) {
-  //Build necessary book details details
-  let card1 = document.createElement('li')
-  card1.className = 'card1'
-  card1.innerHTML = `
-  <div class="container">
-  <div class = 'content'>
-  <h3> ${book.title} </h3>
-  <p>${book.url} <p>
-  <p> ${book.author} </p>
-  </div>
-  </div>`
-  document.querySelector('#book-list').appendChild(card1) 
-}
+// //Render One book
+// function renderOneBook(book) {
+//   //Build necessary book details details
+//   let card1 = document.createElement('li')
+//   card1.className = 'card1'
+//   card1.innerHTML = `
+//   <div class="container">
+//   <div class = 'content'>
+//   <h3> ${book.title} </h3>
+//   <p>${book.url} <p>
+//   <p> ${book.author} </p>
+//   </div>
+//   </div>`
+//   document.querySelector('#book-list').appendChild(card1) 
+// }
 
 
 
-//fetch furniture data
-function getAllBooks() {
-  fetch('http://localhost:3000/books')
-  .then(resp => resp.json())
-  .then(bookData => bookData.book.forEach(book => renderOneBook(book)))
-  .catch(err => console.error(err));
-}
+// //fetch furniture data
+// function getAllBooks() {
+//   fetch('https://stormy-brushlands-81321.herokuapp.com/books')
+//   .then(resp => resp.json())
+//   .then(bookData => bookData.book.forEach(book => renderOneBook(book)))
+//   .catch(err => console.error(err));
+// }
 
-function initialize () {
-  getAllBooks()
-}
-initialize()
+// function initialize () {
+//   getAllBooks()
+// }
+// initialize()
 
+let url = 'https://stormy-brushlands-81321.herokuapp.com/books'
+const body = document.querySelector('#body')
+console.log(body.parentNode);
+body.parentNode.style.backgroundColor = '#f4f4f4';
+//const comment = document.querySelector('textarea');
+//const backUp = comment.getAttribute('placeholder');
+//const btn = document.querySelector('btn');
+//const clear = document.getElementById('clear');
+//const submit = document.getElementById('submit');
+fetch(url)
+	.then(response => response.json())
+	.then(data => {
+
+		let html = ""
+
+		data.map((value) => {
+			html += `
+			 <div class = "col.md-9">
+			 <div class="card">
+                      <h4 class="title"><span>Title</span>: ${value.title}</h4>
+                      <h4 id="author"><span>Author</span>: ${value.author}</h4>
+                 <div class="card-body">
+			 	  <h4><span>Link</span>: ${value.source} </h4>
+                </div>
+             </div>
+			 </div>
+			`
+		})
+
+		document.getElementById('container').innerHTML = html
+	})
 
 
 

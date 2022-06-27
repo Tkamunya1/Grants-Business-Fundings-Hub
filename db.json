@@ -3,25 +3,25 @@
       {
         "id": 1,
         "title": "5 Habits to Building Better Products Faster",
-        "url": "https://hitenism.com/5-habits-better-products/",
+        "links": "https://hitenism.com/5-habits-better-products/",
         "author": "Hiten Shah"
       },
       {
         "id": 2,
         "title": "Managing Digital Projects",
-        "url": "https://activecollab.com/project-management-guides/managing-digital-projects-ebook",
+        "links": "https://activecollab.com/project-management-guides/managing-digital-projects-ebook",
          "author": "Active Collab"
       },
       {
         "id": 3,
         "title": "Ship It",
-        "url": "https://productschool.com/ship-it-book/",
+        "links": "https://productschool.com/ship-it-book/",
          "author": "Product School, Nathan Thomas, Gabriela Araujo"
       },
       {
         "id": 4,
         "title": "Don’t Just Roll the Dice",
-        "url": "https://www.red-gate.com/library/dont-just-roll-the-dice",
+        "links": "https://www.red-gate.com/library/dont-just-roll-the-dice",
          "author": "Neil Davidson"
       }
     ]
