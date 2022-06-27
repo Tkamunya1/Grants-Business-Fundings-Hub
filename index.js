@@ -71,12 +71,6 @@ for (i = 0; i < coll.length; i++) {
 let url = 'https://stormy-brushlands-81321.herokuapp.com/books'
 const body = document.querySelector('#body')
 console.log(body.parentNode);
-body.parentNode.style.backgroundColor = '#f4f4f4';
-//const comment = document.querySelector('textarea');
-//const backUp = comment.getAttribute('placeholder');
-//const btn = document.querySelector('btn');
-//const clear = document.getElementById('clear');
-//const submit = document.getElementById('submit');
 fetch(url)
 	.then(response => response.json())
 	.then(data => {
@@ -89,9 +83,7 @@ fetch(url)
 			 <div class="card">
                       <h4 class="title"><span>Title</span>: ${value.title}</h4>
                       <h4 id="author"><span>Author</span>: ${value.author}</h4>
-                 <div class="card-body">
-			 	  <h4><span>Link</span>: ${value.source} </h4>
-                </div>
+                 
              </div>
 			 </div>
 			`

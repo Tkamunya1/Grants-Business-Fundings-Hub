@@ -43,27 +43,37 @@ nav{
       text-align: left;
     }
 
-    
+    .goodReads{
+      color: dodgerblue;
+    }
     h1{
       font-family: 'Poppins', sans-serif;
+      color: dodgerblue;
+  }
+  #cointainer{
+  display: flex;
   }
   
   h2{
       font-size: 25px;
   }
+  #body{
+text-align: center; 
+ }
   #section1{
       display: block;
-      background-color: green;
       color: white;
       position: fixed;
       top: 0rem;
       z-index: 100;
       width: 100%;
       border: 5px solid yellowgreen;
+      align-items: center;
   }
   
-  #navBar{
+  #booksBar{
       display: flex;
+      color: dodgerblue;
   }
   ul{
       text-decoration: none;
@@ -107,26 +117,7 @@ nav{
     flex-direction:row;
     align-items:center;
   }
-  #movers{
-    align-items: center;
-    padding-left: 80px;
-
-
-  }
   
-  #movers ul li{
-    list-style: none;
-    display: inline-block;
-    padding-bottom: 50px;
-    padding-left: 80px;
-    font-size: larger;
-  }
-
-
-  #viewBook{
-    font-style: italic;
-    height: 5vh;
-  }
 
   
   .card2 {
