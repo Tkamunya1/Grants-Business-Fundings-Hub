@@ -35,13 +35,14 @@ for (i = 0; i < coll.length; i++) {
 
 
 
+const renderOneBook = document.getElementsByClassName("card1");
 
 //Render One book
 function renderOneBook(book) {
   //Build necessary book details details
-  let card = document.createElement('li')
-  card.className = 'card'
-  card.innerHTML = `
+  let card1 = document.createElement('li')
+  card1.className = 'card1'
+  card1.innerHTML = `
   <div class="container">
   <div class = 'content'>
   <h3> ${book.title} </h3>
@@ -49,7 +50,7 @@ function renderOneBook(book) {
   <p> ${book.author} </p>
   </div>
   </div>`
-  document.querySelector('#book-list').appendChild(card) 
+  document.querySelector('#book-list').appendChild(card1) 
 }
 
 
@@ -58,7 +59,7 @@ function renderOneBook(book) {
 function getAllBooks() {
   fetch('http://localhost:3000/books')
   .then(resp => resp.json())
-  .then(bookData => bookData.furniture.forEach(book => renderOneBook(book)))
+  .then(bookData => bookData.book.forEach(book => renderOneBook(book)))
   .catch(err => console.error(err));
 }
 
