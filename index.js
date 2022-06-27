@@ -33,19 +33,40 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-const viewBook=document.getElementById('viewBook').value;
-async function loadBook(searchTerm){
-  const url=`http://openlibrary.org/search.json?title=the+lord+of+the+rings`
-  fetch(url)
-  .then(res=>res.json())
-  .then(res=>console.log(res));
+
+
+
+//Render One book
+function renderOneBook(book) {
+  //Build necessary book details details
+  let card = document.createElement('li')
+  card.className = 'card'
+  card.innerHTML = `
+  <div class="container">
+  <div class = 'content'>
+  <h3> ${book.title} </h3>
+  <p>${book.url} <p>
+  <p> ${book.author} </p>
+  </div>
+  </div>`
+  document.querySelector('#book-list').appendChild(card) 
 }
 
 
 
+//fetch furniture data
+function getAllBooks() {
+  fetch('http://localhost:3000/books')
+  .then(resp => resp.json())
+  .then(bookData => bookData.furniture.forEach(book => renderOneBook(book)))
+  .catch(err => console.error(err));
+}
 
+function initialize () {
+  getAllBooks()
+}
+initialize()
 
-// viewBook();
 
 
 
