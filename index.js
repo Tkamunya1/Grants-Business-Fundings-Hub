@@ -31,43 +31,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
-
-
-
-// const renderOneBook = document.getElementsByClassName("card1");
-
-// //Render One book
-// function renderOneBook(book) {
-//   //Build necessary book details details
-//   let card1 = document.createElement('li')
-//   card1.className = 'card1'
-//   card1.innerHTML = `
-//   <div class="container">
-//   <div class = 'content'>
-//   <h3> ${book.title} </h3>
-//   <p>${book.url} <p>
-//   <p> ${book.author} </p>
-//   </div>
-//   </div>`
-//   document.querySelector('#book-list').appendChild(card1) 
-// }
-
-
-
-// //fetch furniture data
-// function getAllBooks() {
-//   fetch('https://stormy-brushlands-81321.herokuapp.com/books')
-//   .then(resp => resp.json())
-//   .then(bookData => bookData.book.forEach(book => renderOneBook(book)))
-//   .catch(err => console.error(err));
-// }
-
-// function initialize () {
-//   getAllBooks()
-// }
-// initialize()
-
+//renderbooks
 let url = 'https://stormy-brushlands-81321.herokuapp.com/books'
 const body = document.querySelector('#body')
 console.log(body.parentNode);
