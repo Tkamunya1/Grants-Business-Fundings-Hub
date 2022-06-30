@@ -91,7 +91,7 @@ text-align: center;
   }
   
   #booksContainer{
-      display: flex;
+      display: inline-flex;
   }
   
   .books{

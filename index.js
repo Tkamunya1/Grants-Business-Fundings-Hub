@@ -47,6 +47,8 @@ fetch(url)
 			 <div class="card">
                       <h4 class="title"><span>Title</span>: ${value.title}</h4>
                       <h4 id="author"><span>Author</span>: ${value.author}</h4>
+                      <img class="card-img-top" src="${value.imgUrl}" alt="Card image" style="width:10%">
+
                  
              </div>
 			 </div>
